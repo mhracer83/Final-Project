@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Styles - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="site-owner">Alex Styles</h1>
+      <nav>
+        <ul>
+          <li><a href="#about-me" title="Learn about Alex">About Me</a></li>
+          <li><a href="#portfolio" title="View Alex's work">Portfolio</a></li>
+          <li><a href="#contact" title="Get in touch">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About Me Section -->
+      <section id="about-me">
+        <h2>About Me</h2>
+        <p>
+          Placeholder for Alex's brief introduction, background, and skills.
+        </p>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-wrapper"></div>
+          <div class="portfolio-grid">
+            <!-- Placeholders for project thumbnails -->
+            <div class="project">
+              <a href="#project-details">
+                <img src="placeholder-thumbnail.jpg" alt="Project Thumbnail" />
+                <p>Project Title</p>
+              </a>
+            </div>
+            <div class="project">
+              <a href="#project-details">
+                <img src="placeholder-thumbnail.jpg" alt="Project Thumbnail" />
+                <p>Project Title</p>
+              </a>
+            </div>
+            <!-- Add more project thumbnails as needed -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Alex Styles. All rights reserved.</p>
+    </footer>
+    
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <h3>Project Title</h3>
+        <p>Detailed project description goes here...</p>
+      </div>
+    </div>
+    <div id="thank-you-message">
+      <p>Thank you for your response! We will be in touch!</p>
+      <button id="close-message">Close</button>
+  </div>
+  </body>
+  <script src="script.js"></script>
+</html>
